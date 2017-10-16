@@ -57,10 +57,10 @@ public class FeederMotorReverseToggle extends Command {
     			break;
     			
     		case off:
-    			Robot.feeder.reverse();
-    			if (MyGlobal.intakeMotorStatus == MyGlobal.motorStatus.fwd) {
+    			if (MyGlobal.intakeMotorStatus == MyGlobal.MotorStatus.fwd) {
     				Robot.intake.stop();
     			}
+    			Robot.feeder.reverse();
     			break;
     		}
     	}

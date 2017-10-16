@@ -53,7 +53,7 @@ public class IntakeMotorForwardToggle extends Command {
     		case rev:
     		case off:
     			Robot.intake.forward();
-    			if(MyGlobal.feederMotorStatus == MyGlobal.motorStatus.rev) {
+    			if(MyGlobal.feederMotorStatus == MyGlobal.MotorStatus.rev) {
     				Robot.feeder.stop();
     			}
     			break;

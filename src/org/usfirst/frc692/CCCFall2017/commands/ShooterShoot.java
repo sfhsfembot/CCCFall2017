@@ -43,7 +43,7 @@ public class ShooterShoot extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	if((MyGlobal.feederMotorStatus == MyGlobal.motorStatus.off) || (MyGlobal.feederMotorStatus == MyGlobal.motorStatus.rev)) {
+    	if((MyGlobal.feederMotorStatus == MyGlobal.MotorStatus.off) || (MyGlobal.feederMotorStatus == MyGlobal.MotorStatus.rev)) {
     		Robot.feeder.forward();
     	}
     	Robot.shooter.shoot((double)((double)(MyGlobal.shooterSpeed)/(double)10));
